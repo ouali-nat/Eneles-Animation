@@ -1,4 +1,4 @@
-# Aurore Motion 🌱
+# Eneles Animation
 
 Écris du JSON, vois ton animation en direct. Tout tourne dans le navigateur, sans dépendance ni installation.
 
