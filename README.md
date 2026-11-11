@@ -8,6 +8,20 @@
 2. Choisis un exemple ou modifie le JSON : l'aperçu se met à jour tout seul.
 3. Les erreurs de JSON s'affichent sous l'éditeur.
 4. Boutons : lecture/pause (relance à la fin), curseur de position, vitesse, partage par lien, copie du JSON.
+5. Ouvre **Studio 3D** pour transformer une image en modèle 3D texturé et exporter le résultat en GLB.
+
+## Studio 3D
+
+Le fichier `studio-3d.html` intègre le démonstrateur hébergé de **TripoSG** (projet open source MIT) via son espace Gradio public :
+
+- Importer une image avec un objet clairement visible.
+- Générer la forme 3D, puis appliquer une texture.
+- Télécharger le modèle au format GLB.
+
+Le calcul IA est exécuté par l'espace externe Hugging Face, pas dans le navigateur d'Eneles. Les images importées dans le cadre de cette génération sont transmises à ce service. La disponibilité et les temps d'attente dépendent de l'hébergeur.
+
+- [Code source TripoSG](https://github.com/VAST-AI-Research/TripoSG)
+- [Démonstrateur TripoSG](https://vast-ai-triposg.hf.space/)
 
 ## Format
 
