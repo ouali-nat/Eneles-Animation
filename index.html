@@ -9,10 +9,10 @@
 :root{--bg:#090812;--card:#17142a;--line:#2b2650;--tx:#f4f2ff;--mu:#a9a3d1;--ac:#8b5cf6;--er:#fb7185}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--tx);font:15px system-ui,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
-header{display:flex;align-items:center;gap:8px;padding:12px 14px}
+header{display:flex;align-items:center;gap:8px;padding:12px 14px;flex-wrap:wrap}
 h1{font-size:1.05rem;margin:0;flex:1}
-select,button{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:9px 12px;font:inherit}
-button.p{background:var(--ac);border-color:var(--ac);font-weight:600}
+select,button,.studio-link{background:var(--card);color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:9px 12px;font:inherit;text-decoration:none}
+button.p,.studio-link{background:var(--ac);border-color:var(--ac);font-weight:600}
 main{max-width:720px;margin:0 auto;padding:0 14px 28px}
 #wrap{position:relative;overflow:hidden}
 #stage{position:absolute;left:50%;top:0;transform-origin:top center;border-radius:14px;border:1px solid var(--line);overflow:hidden}
@@ -24,12 +24,14 @@ textarea{width:100%;min-height:260px;background:#0d0b1f;color:#d9d4ff;border:1px
 details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;color:var(--mu);font-size:.85rem;line-height:1.55}
 summary{color:var(--tx);font-weight:600}
 code{color:#c4b5fd}
+@media(max-width:520px){header{align-items:stretch}header h1{width:100%;flex-basis:100%}.studio-link,header select{flex:1;text-align:center}}
 </style>
 </head>
 <body>
 <header>
   <h1>Eneles Animation</h1>
   <select id="ex" aria-label="Exemples"></select>
+  <a class="studio-link" href="studio-3d.html">Studio 3D</a>
 </header>
 <main>
   <div id="wrap"><div id="stage"></div></div>
